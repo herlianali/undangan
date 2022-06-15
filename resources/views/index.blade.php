@@ -96,7 +96,7 @@
                 <div class="col col-md-4 align-self-start d-flex flex-column align-items-center" data-aos="fade-right" data-aos-duration="1000">
                     <div class="img-wrapper-spouse mb-6" data-aos="fade-right" data-aos-offset="-100" data-aos-duration="1000">
                         <div class="img-wrapper">
-                            <img src="{{ asset('public/assets/img/spouse/man.png') }}" alt="">
+                            <img src="{{ asset('public/assets/img/man.png') }}" alt="">
                         </div>
                     </div>
                     <h3 class="font-type-secondary font-bold mb-4" data-aos="fade-right"  data-aos-offset="-100" data-aos-duration="1200">Seseorang</h3>
@@ -110,7 +110,7 @@
                 <div class="col col-md-4 align-self-start d-flex flex-column align-items-center">
                     <div class="img-wrapper-spouse mb-6" data-aos="fade-left" data-aos-offset="-100" data-aos-duration="1000">
                         <div class="img-wrapper">
-                            <img src="{{ asset('public/assets/img/spouse/woman.png') }}" alt="">
+                            <img src="{{ asset('public/assets/img/woman.png') }}" alt="">
                         </div>
                     </div>
                     <h3 class="font-type-secondary font-bold mb-4" data-aos="fade-left"  data-aos-offset="-100" data-aos-duration="1200">Seseorang</h3>
@@ -131,7 +131,7 @@
                 <div class="col-lg-5 mb-6 mb-sm-10 mb-lg-0">
                     <div class="card card-story card-story-left mx-auto mb-6 mb-sm-10 mb-lg-16" data-aos="card-story-left" data-aos-duration="1200">
                         <div class="card-body">
-                            <img src="{{ asset('public/assets/img/gallery/1.jpg') }}" alt="">
+                            <img src="{{ asset('public/assets/img/1.jpg') }}" alt="">
                         </div>
                     </div>
 
@@ -147,12 +147,12 @@
 
                     <div class="card card-story card-story-left mx-auto" data-aos="card-story-left" data-aos-duration="1200">
                         <div class="card-body">
-                            <img src="{{ asset('public/assets/img/gallery/3.jpg') }}" alt="">
+                            <img src="{{ asset('public/assets/img/3.jpg') }}" alt="">
                         </div>
                     </div>
                 </div>
                 <div class="d-none d-lg-block col-lg-auto text-center">
-                    <img src="{{ asset('public/assets/img/decoration/list-section-2.svg') }}" alt="">
+                    <img src="{{ asset('public/assets/img/list-section-2.svg') }}" alt="">
                 </div>
                 <div class="col-lg-5">
                     <div class="text-center text-lg-start b-10 mb-16 mb-lg-50" data-aos="fade-up" data-aos-duration="1200">
@@ -167,7 +167,7 @@
 
                     <div class="card card-story card-story-right mx-auto  mb-6 mb-sm-10 mb-lg-16" data-aos="card-story-right" data-aos-duration="1200">
                         <div class="card-body">
-                            <img src="{{ asset('public/assets/img/gallery/2.jpg') }}" alt="">
+                            <img src="{{ asset('public/assets/img/2.jpg') }}" alt="">
                         </div>
                     </div>
 
@@ -188,9 +188,9 @@
     <section id="section-3">
         <div class="container">
             <div id="row-lightgallery" class="row align-items-stretch g-4 g-lg-5 py-10 overflow-hidden">
-                <div data-src="{{ asset('public/assets/img/gallery/1.jpg') }}" class="col-md-6 col-lg-4 order-2 order-lg-1" data-aos="fade-up" data-aos-offset="-200" data-aos-duration="1200">
+                <div data-src="{{ asset('public/assets/img/1.jpg') }}" class="col-md-6 col-lg-4 order-2 order-lg-1" data-aos="fade-up" data-aos-offset="-200" data-aos-duration="1200">
                     <div class="img-wrapper img-wrapper-gallery-1">
-                        <img src="{{ asset('public/assets/img/gallery/1.jpg') }}" alt="">
+                        <img src="{{ asset('public/assets/img/1.jpg') }}" alt="">
                     </div>
                 </div>
                 <div class="col-lg-8 d-flex order-1 order-lg-2">
@@ -203,20 +203,20 @@
                             </p>
                         </div>
                         <div class="col-6 align-self-end" data-aos="fade-up" data-aos-offset="-250" data-aos-duration="1400">
-                            <div data-src="{{ asset('public/assets/img/gallery/2.jpg') }}" class="img-wrapper img-wrapper-gallery-2">
-                                <img src="{{ asset('public/assets/img/gallery/2.jpg') }}" alt="">
+                            <div data-src="{{ asset('public/assets/img/2.jpg') }}" class="img-wrapper img-wrapper-gallery-2">
+                                <img src="{{ asset('public/assets/img/2.jpg') }}" alt="">
                             </div>
                         </div>
                         <div class="col-6 align-self-end" data-aos="fade-up" data-aos-offset="-250" data-aos-duration="1600">
-                            <div data-src="{{ asset('public/assets/img/gallery/3.jpg') }}" class="img-wrapper img-wrapper-gallery-2">
-                                <img src="{{ asset('public/assets/img/gallery/3.jpg') }}" alt="">
+                            <div data-src="{{ asset('public/assets/img/3.jpg') }}" class="img-wrapper img-wrapper-gallery-2">
+                                <img src="{{ asset('public/assets/img/3.jpg') }}" alt="">
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-12 order-3" data-aos="fade-up" data-aos-offset="-250" data-aos-duration="1800">
-                    <div data-src="{{ asset('public/assets/img/gallery/4.jpg') }}" class="img-wrapper img-wrapper-gallery-3">
-                        <img src="{{ asset('public/assets/img/gallery/4.jpg') }}" alt="">
+                    <div data-src="{{ asset('public/assets/img/4.jpg') }}" class="img-wrapper img-wrapper-gallery-3">
+                        <img src="{{ asset('public/assets/img/4.jpg') }}" alt="">
                     </div>
                 </div>
             </div>
@@ -415,7 +415,7 @@
             <div class="text-center py-10">
                 <h4 class="font-type-secondary font-bold mb-6">Terimakasih atas doa restunya</h4>
                 <h2 class="font-type-secondary font-bold mb-10">Seseorang & Seseorang</h2>
-                <img src="{{ asset('public/assets/img/decoration/closing.png') }}" alt="" class="w-25rem">
+                <img src="{{ asset('public/assets/img/closing.png') }}" alt="" class="w-25rem">
             </div>
         </div>
     </section>
