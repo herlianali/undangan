@@ -1,26 +1,26 @@
-var url = new URL(window.location.href);
-var u = url.searchParams.get("u");
-if (u==null || u=="") {
-    document.getElementById('guest').innerHTML = "Guest";
-} else {
-    document.getElementById('guest').innerHTML = u;
-}
+// var url = new URL(window.location.href);
+// var u = url.searchParams.get("u");
+// if (u==null || u=="") {
+//     document.getElementById('guest').innerHTML = "Guest";
+// } else {
+//     document.getElementById('guest').innerHTML = u;
+// }
 
 document.addEventListener('DOMContentLoaded', function() {
-    /* 
+    /*
     |======================================
-    | APP INIT 
+    | APP INIT
     |======================================
     */
     AOS.init();
-    
-    /* 
+
+    /*
     |======================================
     | OPENING SCRIPT
     |======================================
     */
     // animate spouse text opening
-    const headerSpouseText = document.querySelector('#opening h1');
+    const headerSpouseText = document.querySelector('#opening h2');
     headerSpouseText.innerHTML = headerSpouseText.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
     anime.timeline()
         .add({
@@ -58,9 +58,9 @@ document.addEventListener('DOMContentLoaded', function() {
             audio.pause();
         }
     })
-   
 
-    /* 
+
+    /*
     |======================================
     | PAGE SCRIPT
     |======================================
@@ -121,5 +121,5 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
     })
-    
+
 });
