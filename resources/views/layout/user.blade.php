@@ -6,9 +6,9 @@
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&amp;display=fallback">
 
-    <link rel="stylesheet" href="{{asset('/AdminLTE/plugins/fontawesome-free/css/all.min.css')}}">
+    <link rel="stylesheet" href="{{asset('public/assets/AdminLTE/plugins/fontawesome-free/css/all.min.css')}}">
 
-    <link rel="stylesheet" href="{{asset('/AdminLTE/dist/css/adminlte.min.css?v=3.2.0')}}">
+    <link rel="stylesheet" href="{{asset('public/assets/AdminLTE/dist/css/adminlte.min.css?v=3.2.0')}}">
 </head>
 <body class="sidebar-mini control-sidebar-slide-open layout-fixed layout-navbar-fixed layout-footer-fixed" style="height: auto;">
 
@@ -73,7 +73,7 @@
                             </ul>
                         </li> -->
                         <li class="nav-item">
-                            <a href="{{url('/beranda')}}" class="nav-link">
+                            <a href="{{ route('beranda') }}" class="nav-link">
                                 <i class="nav-icon fas fa-th"></i>
                                 <p>
                                     Beranda
@@ -81,7 +81,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{url('/ucapan')}}" class="nav-link">
+                            <a href="{{ route('ucapanAdmin') }}" class="nav-link">
                                 <i class="nav-icon fas fa-th"></i>
                                 <p>
                                     Ucapan
@@ -111,13 +111,11 @@
     </div>
 
 
-    <script src="{{asset('/AdminLTE/plugins/jquery/jquery.min.js')}}"></script>
+    <script src="{{asset('public/assets/AdminLTE/plugins/jquery/jquery.min.js')}}"></script>
 
-    <script src="{{asset('/AdminLTE/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+    <script src="{{asset('public/assets/AdminLTE/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 
-    <script src="{{asset('/AdminLTE/dist/js/adminlte.min.js?v=3.2.0')}}"></script>
-
-    <script src="{{asset('/AdminLTE/dist/js/demo.js')}}"></script>
+    <script src="{{asset('public/assets/AdminLTE/dist/js/adminlte.min.js?v=3.2.0')}}"></script>
 
 
 </body>

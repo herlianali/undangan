@@ -36,7 +36,7 @@
             <h2 class="font-type-secondary my-5">EL Rama Janistimewa Nuris Sani, S. Kom </h2>
             <h2 class="font-type-secondary my-5">&</h2>
             <h2 class="font-type-secondary my-5">Devi Fatmawati, S. E</h2>
-            <h5 class="mb-16">01 - 02 - 2022</h5>
+            <h5 class="mb-16">17 - 07 - 2022</h5>
 
             <div class="row justify-content-center">
                 <div class="col-auto">
@@ -64,7 +64,7 @@
                     </li>
                     <li class="nav-item">
                         <h4 class="font-type-secondary d-none d-md-flex">
-                            <a class="nav-link page-scroll"  href="#section-1">R & D</a>
+                            <a class="nav-link page-scroll"  href="#section-1">D & J</a>
                         </h4>
                         <a class="nav-link page-scroll d-md-none"  href="#section-1">Pengantin</a>
                     </li>
@@ -91,7 +91,7 @@
                         <a class="nav-link page-scroll"  href="#section-3">Galeri</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link page-scroll"  href="#section-1">J & J</a>
+                        <a class="nav-link page-scroll"  href="#section-1">D & J</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link page-scroll"  href="#section-4">Jadwal</a>
@@ -107,8 +107,10 @@
     <header id="header">
         <div class="container text-white text-center">
             <h6 class="text-dec text-dec-white">Pernikahan</h6>
-            <h1 class="font-type-secondary my-6">EL Rama Janistimewa Nuris Sani, S. Kom & Devi Fatmawati, S. E</h1>
-            <h5>01 - 02 - 2022</h5>
+            <h2 class="font-type-secondary my-5">EL Rama Janistimewa Nuris Sani, S. Kom </h2>
+            <h2 class="font-type-secondary my-5">&</h2>
+            <h2 class="font-type-secondary my-5">Devi Fatmawati, S. E</h2>
+            <h5>17 - 07 - 2022</h5>
         </div>
     </header>
 
@@ -158,54 +160,36 @@
                 <div class="col-lg-5 mb-6 mb-sm-10 mb-lg-0">
                     <div class="card card-story card-story-left mx-auto mb-6 mb-sm-10 mb-lg-16" data-aos="card-story-left" data-aos-duration="1200">
                         <div class="card-body">
-                            <img src="{{ asset('public/assets/img/1/4.jpg') }}" alt="">
-                        </div>
-                    </div>
-
-                    <div class="text-center text-lg-start b-10 mb-16 mb-lg-50" data-aos="fade-up" data-aos-duration="1200">
-                        <div data-aos="fade-up" data-aos-duration="1300">
-                            <h5>2016</h5>
-                            <h4 class="font-type-secondary mb-2">Bagaimana Kami Bertemu</h4>
-                        </div>
-                        <p class="text-lg font-light" data-aos="fade-up" data-aos-duration="1500">
-                            pertemuan pertama kali berawal dari satu bangku sekolah yang sama dengan perasaan yg kagum dan tertarik sehingga menjadikan saya seorang pengagum rahasia dari kejauhan. seiring berjalannya waktu membuat kami semakin dekat, meskipun kita sempat berjauhan karena suatu perbedaan pendapat tetapi membuat kami semakin menghargai artinya sebuah waktu kebersamaan.
-                        </p>
-                    </div>
-
-                    <div class="card card-story card-story-left mx-auto" data-aos="card-story-left" data-aos-duration="1200">
-                        <div class="card-body">
-                            <img src="{{ asset('public/assets/img/1/5.jpg') }}" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="d-none d-lg-block col-lg-auto text-center">
-                    <img src="{{ asset('public/assets/img/list-section-2.svg') }}" alt="">
-                </div>
-                <div class="col-lg-5">
-                    <div class="text-center text-lg-start b-10 mb-16 mb-lg-50" data-aos="fade-up" data-aos-duration="1200">
-                        <div data-aos="fade-up" data-aos-duration="1300">
-                            <h5>2016</h5>
-                            <h4 class="font-type-secondary mb-2">Bagaimana Kami Bertemu</h4>
-                        </div>
-                        <p class="text-lg font-light" data-aos="fade-up" data-aos-duration="1500">
-                            Pertemuan pertama kali berawal dari satu bangku sekolah yang sama dengan perasaan yg kagum dan tertarik sehingga menjadikan saya seorang pengagum rahasia dari kejauhan. seiring berjalannya waktu membuat kami semakin dekat, meskipun kita sempat berjauhan karena suatu perbedaan pendapat tetapi membuat kami semakin menghargai artinya sebuah waktu kebersamaan.
-                        </p>
-                    </div>
-
-                    <div class="card card-story card-story-right mx-auto  mb-6 mb-sm-10 mb-lg-16" data-aos="card-story-right" data-aos-duration="1200">
-                        <div class="card-body">
                             <img src="{{ asset('public/assets/img/1/6.jpg') }}" alt="">
                         </div>
                     </div>
 
                     <div class="text-center text-lg-start b-10 mb-16 mb-lg-50" data-aos="fade-up" data-aos-duration="1200">
                         <div data-aos="fade-up" data-aos-duration="1300">
-                            <h5>2016</h5>
-                            <h4 class="font-type-secondary mb-2">Memutuskan bersama</h4>
+                            <!-- <h5>2016</h5> -->
+                            <h4 class="font-type-secondary mb-2">Memutuskan Untuk Bersama</h4>
                         </div>
                         <p class="text-lg font-light" data-aos="fade-up" data-aos-duration="1500">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies etiam malesuada vitae ipsum sed diam at. Fringilla hac facilisis dignissim facilisis imperdiet praesent ullamcorper. Etiam cursus aliquam lorem enim volutpat elit commodo. Ut et etiam nulla quisque nec morbi sit tincidunt netus. Dictum scelerisque consequat massa feugiat velit. Ut fringilla suspendisse enim volutpat semper in et sed. Id.
+                            Dengan begitu banyak halang rintang yang pernah kami lewati, akhirnya kami memutuskan untuk ke jenjang selanjutnya yaitu pernikahan. Dimana dia adalah rumah bagi saya. “I choose you. And I'll choose you over and over and over. Without pause, without a doubt, in a heartbeat, I'll keep choosing you”.
                         </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-5">
+                    <div class="text-center text-lg-start b-10 mb-16 mb-lg-50" data-aos="fade-up" data-aos-duration="1200">
+                        <div data-aos="fade-up" data-aos-duration="1300">
+                            <!-- <h5>2016</h5> -->
+                            <h4 class="font-type-secondary mb-2">Bagaimana Kami Bertemu</h4>
+                        </div>
+                        <p class="text-lg font-light" data-aos="fade-up" data-aos-duration="1500">
+                            Pertemuan pertama kali berawal dari satu bangku sekolah yang sama dengan perasaan yg kagum dan tertarik sehingga menjadikan saya seorang pengagum rahasia dari kejauhan. Seiring berjalannya waktu membuat kami semakin dekat, meskipun kita sempat berjauhan karena suatu perbedaan pendapat tetapi membuat kami semakin menghargai artinya sebuah waktu kebersamaan.
+                        </p>
+                    </div>
+
+                    <div class="card card-story card-story-right mx-auto  mb-6 mb-sm-10 mb-lg-16" data-aos="card-story-right" data-aos-duration="1200">
+                        <div class="card-body">
+                            <img src="{{ asset('public/assets/img/1/5.jpg') }}" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -215,33 +199,35 @@
     <section id="section-3">
         <div class="container">
             <div id="row-lightgallery" class="row align-items-stretch g-4 g-lg-5 py-10 overflow-hidden">
-                <div data-src="{{ asset('public/assets/img/1/3.jpg') }}" class="col-md-6 col-lg-4 order-2 order-lg-1" data-aos="fade-up" data-aos-offset="-200" data-aos-duration="1200">
+                <!-- <div data-src="{{ asset('public/assets/img/1/3.jpg') }}" class="col-md-6 col-lg-4 order-2 order-lg-1" data-aos="fade-up" data-aos-offset="-200" data-aos-duration="1200">
                     <div class="img-wrapper img-wrapper-gallery-1">
                         <img src="{{ asset('public/assets/img/1/3.jpg') }}" alt="">
                     </div>
-                </div>
-                <div class="col-lg-8 d-flex order-1 order-lg-2">
-                    <div class="row g-lg-5">
+                </div> -->
+                <div class="col-lg-12 order-1">
+                    <div class="row">
                         <div class="col-12 text-white">
                             <h6 class="text-spacing-default">GALERI</h6>
                             <h4 class="font-type-secondary mb-6">Foto Prewedding Kami</h4>
-                            <p class="text-lg font-light mb-4 mb-lg-2">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis libero faucibus tortor sollicitudin dis auctor volutpat donec. Purus mattis eu congue quisque. Morbi ipsum nulla eget proin proin. Aliquet condimentum justo neque, maecenas. Arcu quis justo et.
-                            </p>
                         </div>
-                        <div class="col-6 align-self-end" data-aos="fade-up" data-aos-offset="-250" data-aos-duration="1400">
+                        <div class="col-4 align-self-end" data-aos="fade-up" data-aos-offset="-250" data-aos-duration="1400">
                             <div data-src="{{ asset('public/assets/img/1/5.jpg') }}" class="img-wrapper img-wrapper-gallery-2">
                                 <img src="{{ asset('public/assets/img/1/5.jpg') }}" alt="">
                             </div>
                         </div>
-                        <div class="col-6 align-self-end" data-aos="fade-up" data-aos-offset="-250" data-aos-duration="1600">
+                        <div class="col-4 align-self-end" data-aos="fade-up" data-aos-offset="-250" data-aos-duration="1600">
                             <div data-src="{{ asset('public/assets/img/1/6.jpg') }}" class="img-wrapper img-wrapper-gallery-2">
                                 <img src="{{ asset('public/assets/img/1/6.jpg') }}" alt="">
                             </div>
                         </div>
+                        <div class="col-4 align-self-end" data-aos="fade-up" data-aos-offset="-250" data-aos-duration="1600">
+                            <div data-src="{{ asset('public/assets/img/1/3.jpg') }}" class="img-wrapper img-wrapper-gallery-2">
+                                <img src="{{ asset('public/assets/img/1/3.jpg') }}" alt="">
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-12 order-3" data-aos="fade-up" data-aos-offset="-250" data-aos-duration="1800">
+                <div class="col-md-6 col-lg-12 order-2" data-aos="fade-up" data-aos-offset="-250" data-aos-duration="1800">
                     <div data-src="{{ asset('public/assets/img/1/4.jpg') }}" class="img-wrapper img-wrapper-gallery-3">
                         <img src="{{ asset('public/assets/img/1/4.jpg') }}" alt="">
                     </div>
@@ -273,9 +259,9 @@
                     <h6 class="text-primary font-bold mb-6">jam 08.00</h6>
 
                     <h6 class="text-spacing-default mb-2">Lokasi</h6>
-                    <h6 class="text-primary font-bold mb-6">Jl Lorem ipsum X No. 00</h6>
+                    <h6 class="text-primary font-bold mb-6">Jl. Raya Ketimang No. 31 RT.06 RW.02</h6>
 
-                    <a href="" class="btn btn-primary">
+                    <a href="https://goo.gl/maps/kUZ8DRiTpjXT2t868" class="btn btn-primary">
                         <i class="ri ri-pin mr-1"></i> Lihat Lokasi
                     </a>
                 </div>
@@ -292,9 +278,9 @@
                     <h6 class="text-primary font-bold mb-6">jam 12.00 – 15.00</h6>
 
                     <h6 class="text-spacing-default mb-2">Lokasi</h6>
-                    <h6 class="text-primary font-bold mb-6">Jl Lorem ipsum X No. 00</h6>
+                    <h6 class="text-primary font-bold mb-6">Jl. Raya Ketimang No. 31 RT.06 RW.02</h6>
 
-                    <a href="" class="btn btn-primary">
+                    <a href="https://goo.gl/maps/kUZ8DRiTpjXT2t868" class="btn btn-primary">
                         <i class="ri ri-pin mr-1"></i> Lihat Lokasi
                     </a>
                 </div>
@@ -335,13 +321,15 @@
                     <div class="card">
                         <div class="card-body">
                             <!-- form ucapan dan doa -->
-                            <form action="">
+                            <form action="{{ route('ucapan') }}" method="POST">
+                                @csrf
                                  <!-- input nama -->
                                 <div class="mb-5">
                                     <label for="" class="form-label">Nama</label>
                                     <input
                                         type="text"
                                         class="form-control"
+                                        name="nama"
                                         placeholder="Nama Lengkap Anda">
                                 </div>
                                 <!-- input nomor -->
@@ -350,18 +338,19 @@
                                     <input
                                         type="text"
                                         class="form-control"
+                                        name="nomor"
                                         placeholder="Nomor WhatsApp atau HP Anda">
                                 </div>
                                 <!-- input hadir -->
                                 <div class="mb-5">
                                     <div class="form-check mb-2">
-                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                        <input class="form-check-input" type="radio" name="absen" value="Ya, saya akan hadir">
                                         <label class="form-check-label" for="flexRadioDefault1">
                                             Ya, saya akan hadir
                                         </label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                                        <input class="form-check-input" type="radio" name="absen" value="Tidak, saya tidak bisa hadir">
                                         <label class="form-check-label" for="flexRadioDefault2">
                                             Tidak, saya tidak bisa hadir
                                         </label>
@@ -373,6 +362,7 @@
                                     <textarea
                                         type="text"
                                         class="form-control"
+                                        name="ucapan"
                                         rows="3"
                                         placeholder="Tulis ucapan dan doa anda untuk mempelai pengantin"></textarea>
                                 </div>
@@ -410,8 +400,11 @@
 
             <!-- closing -->
             <div class="text-center py-10">
-                <h4 class="font-type-secondary font-bold mb-6">Terimakasih atas doa restunya</h4>
-                <h2 class="font-type-secondary font-bold mb-10">Seseorang & Seseorang</h2>
+                <h4 class="font-type-secondary font-bold mb-1">Atas kehadiran serta do'a restunya</h4>
+                <h4 class="font-type-secondary font-bold mb-3">kami ucapkan terima kasih</h4>
+                <h2 class="font-type-secondary font-bold mb-5">Wassalamu'alaikum Warahmatullahi Wabarakatuh</h2>
+                <h4 class="font-type-secondary font-bold mb-3">Kami Yang Berbahagia</h4>
+                <h2 class="font-type-secondary font-bold mb-5">DEVI & JANIST</h2>
                 <img src="{{ asset('public/assets/img/closing.png') }}" alt="" class="w-25rem">
             </div>
         </div>
@@ -434,7 +427,7 @@
     </a>
 
     <audio controls id="audio" class="d-none">
-        <source src="{{ asset('public/assets/music.mp3') }}" type="audio/mpeg">
+        <source src="{{ asset('public/assets/music/a_whole_new_world.mp3') }}" type="audio/mpeg">
         <!-- Your browser does not support the audio element. -->
     </audio>
 

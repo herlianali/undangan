@@ -12,4 +12,16 @@ class ElramaController extends Controller
         $ucapans = Ucapan::latest()->get();
         return view('elrama.index', compact('ucapans'), compact('name'));
     }
+
+    public function ucapan(Request $request)
+    {
+        Ucapan::create([
+            'nama'   => $request->nama,
+            'nomor'  => $request->nomor,
+            'absen'  => $request->absen,
+            'ucapan' => $request->ucapan
+        ]);
+
+        return redirect()->back();
+    }
 }

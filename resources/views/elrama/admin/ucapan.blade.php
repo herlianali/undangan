@@ -36,29 +36,33 @@
             <table class="table table-bordered">
                 <thead>
                     <tr>
-                        <th>#</th>
+                        <th>No</th>
                         <th>Nama</th>
-                        <th>ucapan</th>
-                        <th>kehadiran</th>
-                        <th>aksi</th>
+                        <th>Nomor</th>
+                        <th>Ucapan</th>
+                        <th>Kehadiran</th>
+                        <th>Aksi</th>
                     </tr>
                 </thead>
                 <tbody>
+                    @foreach ($ucapans as $ucapan)
                     <tr>
-                        <td>1.</td>
-                        <td>paijo kuliah</td>
-                        <td>Selamat menempuh hidup baru......</td>
-                        <td>hadir</td>
+                        <td>{{ ++$i }}</td>
+                        <td>{{ $ucapan->nama }}</td>
+                        <td>{{ $ucapan->nomor }}</td>
+                        <td>{{ $ucapan->ucapan }}</td>
+                        <td>{{ $ucapan->absen }}</td>
                         <td>
-                            <a href="#"><i class="fas fa-trash" style="color: red" data-toggle="modal" data-target="#hapus"></i></a>
+                            <a href="#" class="btn btn-sm btn-danger" data-toggle="modal" data-target="#hapus{{ $ucapan->id }}"><i class="fas fa-trash"></i> Hapus</a>
                         </td>
                     </tr>
+                    @endforeach
                 </tbody>
             </table>
         </div>
 
         <!-- <div class="card-footer">
-            
+
         </div> -->
 
     </div>
@@ -66,42 +70,49 @@
 </section>
 
 <!-- tampil modal hapus -->
-<div class="modal fade" id="hapus">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title">Ucapan & Doa</h4>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                   <span aria-hidden="true">&times;</span>
-               </button>
-           </div>
-           <div class="modal-body">
-            <p>Apkah anda yakin ingin menghapus data ini?</p>
-            <table>
-                <tr>
-                    <td>Nama</td>
-                    <td>:</td>
-                    <td>Paijo</td>
-                </tr>
-                <tr>
-                    <td>ucapan</td>
-                    <td>:</td>
-                    <td>Selamat menempuh hidup baru......</td>
-                </tr>
-                <tr>
-                    <td>kehadiran</td>
-                    <td>:</td>
-                    <td>hadir</td>
-                </tr>
-            </table>
+@foreach ( $ucapans as $ucapan1 )
+{{ $ucapan1->id }}
+    <div class="modal fade" id="hapus{{ $ucapan1->id }}">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Ucapan & Doa</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Apkah anda yakin ingin menghapus data ini?</p>
+                <table>
+                    <tr>
+                        <td>Nama</td>
+                        <td>:</td>
+                        <td>{{ $ucapan1->nama }}</td>
+                    </tr>
+                    <tr>
+                        <td>ucapan</td>
+                        <td>:</td>
+                        <td>{{ $ucapan1->ucapan }}</td>
+                    </tr>
+                    <tr>
+                        <td>kehadiran</td>
+                        <td>:</td>
+                        <td>{{ $ucapan1->absen }}</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="modal-footer justify-content-between">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <form action="{{ route('hapusUcapan', $ucapan1->id) }}" method="POST">
+                    @csrf
+                    @method('DELETE')
+                    <button type="submit" class="btn btn-danger">Hapus</button>
+                </form>
+            </div>
         </div>
-        <div class="modal-footer justify-content-between">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-danger">Hapus</button>
-        </div>
-    </div>
 
-</div>
+    </div>
+@endforeach
 
 </div>
 @endsection()
