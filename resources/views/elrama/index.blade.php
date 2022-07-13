@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- favicon -->
-    <link rel="icon" type="image/png" href="{{ asset('public/assets/img/favicon/favicon-16x16.png') }}" sizes="16x16"/>
-    <link rel="icon" type="image/png" href="{{ asset('public/assets/img/favicon/favicon-32x32.png') }}" sizes="16x16"/>
+    <link rel="icon" type="image/png" href="{{ asset('assets/img/dea-logo-pendek.png') }}" sizes="10x10"/>
+    <link rel="icon" type="image/png" href="{{ asset('assets/img/dea-logo-pendek.png') }}" sizes="10x10"/>
 
     <title>UndanganDea | EL Rama Janistimewa Nuris Sani, S. Kom</title>
 
     <!-- CSS  -->
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <!-- Root-Icon -->
     <link rel="stylesheet" href="https://cdn.rootpixel.net/assets/rooticon/v2/rooticon.css">
     <!-- Glide -->
@@ -24,14 +25,29 @@
     <!-- Aos Animation on scroll -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- App -->
-    <link rel="stylesheet" href="{{ asset('public/assets/css/app.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/app.min.css') }}">
+    <style>
+        #navbar-icon {
+            display: flex;
+            flex-direction: column;
+        }
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        input[type=number] {
+            -moz-appearance:textfield;
+        }
+    </style>
 </head>
 <body id="index" class="opening-show" style="cursor: default !important;">
 <!-- <body> -->
 
     <section id="opening">
         <div class="container text-white text-center">
-            <h5 class="mb-2">Halo, <span id="">{{ $name }}</span></h5>
+            <h5 class="mb-2">Hai {{\Session::get('status')}}, <span id="">{{ $name }}</span></h5>
             <h5>Kami mengundang Anda ke Acara Pernikahan kami</h5>
             <h2 class="font-type-secondary my-5">EL Rama Janistimewa Nuris Sani, S. Kom </h2>
             <h2 class="font-type-secondary my-5">&</h2>
@@ -40,20 +56,14 @@
 
             <div class="row justify-content-center">
                 <div class="col-auto">
-                    <button id="btn-open-opening" class="btn btn-primary page-scroll">Buka Undangan</button>
+                    <button id="btn-open-opening" class="btn btn-primary page-scroll"><i class="fa fas-envelope"></i> Buka Undangan</button>
                 </div>
             </div>
         </div>
     </section>
 
-    <nav class="navbar navbar-expand d-none d-sm-block">
+    <nav class="navbar navbar-expand d-none d-sm-none d-md-block">
         <div class="container">
-            <div class="navbar-brand px-0 d-md-none">
-                <h4 class="font-type-secondary text-white">Our Invitation</h4>
-            </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <h6 class="mb-0"><i class="ri ri-menu"></i></h6>
-            </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto align-items-lg-center">
                     <li class="nav-item">
@@ -66,7 +76,7 @@
                         <h4 class="font-type-secondary d-none d-md-flex">
                             <a class="nav-link page-scroll"  href="#section-1">D & J</a>
                         </h4>
-                        <a class="nav-link page-scroll d-md-none"  href="#section-1">Pengantin</a>
+                        <!-- <a class="nav-link page-scroll d-md-none"  href="#section-1">Pengantin</a> -->
                     </li>
                     <li class="nav-item">
                         <a class="nav-link page-scroll"  href="#section-4">Jadwal Pernikahan</a>
@@ -78,26 +88,55 @@
             </div>
         </div>
     </nav>
-    <nav class="navbar navbar-expand fixed-bottom d-md-none d-lg-none d-xl-none" style="padding: 0.5rem 0;">
+    <nav class="navbar navbar-expand fixed-bottom d-md-none d-lg-none d-xl-none py-0" >
         <div class="container">
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto align-items-lg-center nav-justified w-100">
                     <li class="nav-item">
                         <a class="nav-link page-scroll" href="#section-2">
-                            Kami
+                            <div class="row">
+                                <div class="align-items-center justify-content-center mb-2">
+                                    <img src="{{ asset('assets/img/1/Tentang.png') }}" alt="" style="filter: invert(100%); width: 28px;">
+                                </div>
+                                <span>Kisah Kita</span>
+                            </div>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link page-scroll"  href="#section-3">Galeri</a>
+                        <a class="nav-link page-scroll"  href="#section-3">
+                            <div class="row">
+                                <div class="align-items-center justify-content-center mb-1">
+                                    <img src="{{ asset('assets/img/1/galery.png') }}" alt="" style="filter: invert(100%); width: 28px;">
+                                </div>
+                                <span>Galeri</span> 
+                            </div>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link page-scroll"  href="#section-1">D & J</a>
+                        <h2 class="font-type-secondary">
+                            <a class="nav-link page-scroll fw-bold mt-4" style="font-size: 30px"  href="#section-1">D & J</a>
+                        </h2>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link page-scroll"  href="#section-4">Jadwal</a>
+                        <a class="nav-link page-scroll"  href="#section-4">
+                            <div class="row">
+
+                                <div class="align-items-center justify-content-center mb-3">
+                                    <img src="{{ asset('assets/img/1/jadwal.png') }}" alt="" style="filter: invert(100%); width: 28px;">
+                                </div>
+                                <span>Jadwal</span>
+                            </div>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link page-scroll"  href="#section-6">Ucapan</a>
+                        <a class="nav-link page-scroll"  href="#section-6">
+                            <div class="row">
+                                <div class="align-items-center justify-content-center mb-2">
+                                    <img src="{{ asset('assets/img/1/ucapan.png') }}" alt="" style="filter: invert(100%); width: 28px;">
+                                </div>    
+                                <span>Ucapan</span>
+                            </div>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -106,7 +145,7 @@
 
     <header id="header">
         <div class="container text-white text-center">
-            <h6 class="text-dec text-dec-white">Pernikahan</h6>
+            <h6 class="text-dec text-dec-white">The Wedding Of</h6>
             <h2 class="font-type-secondary my-5">EL Rama Janistimewa Nuris Sani, S. Kom </h2>
             <h2 class="font-type-secondary my-5">&</h2>
             <h2 class="font-type-secondary my-5">Devi Fatmawati, S. E</h2>
@@ -122,10 +161,10 @@
                 </div>
             </div>
             <div class="row g-0 g-md-4 align-items-center justify-content-center py-8 overflow-hidden">
-                <div class="col col-md-4 align-self-start d-flex flex-column align-items-center" data-aos="fade-right" data-aos-duration="1000">
+                <div class="col col-md-4 col-xs-4 align-self-start d-flex flex-column align-items-center" data-aos="fade-right" data-aos-duration="1000">
                     <div class="img-wrapper-spouse mb-6" data-aos="fade-right" data-aos-offset="-100" data-aos-duration="1000">
                         <div class="img-wrapper">
-                            <img src="{{ asset('public/assets/img/1/8.png') }}" alt="">
+                            <img src="{{ asset('assets/img/1/8.png') }}" alt="">
                         </div>
                     </div>
                     <h3 class="font-type-secondary font-bold mb-4" data-aos="fade-left"  data-aos-offset="-100" data-aos-duration="1200">EL Rama Janistimewa Nuris Sani, S. Kom</h3>
@@ -133,13 +172,13 @@
                     <h5 data-aos="fade-left"  data-aos-offset="-100" data-aos-duration="1400">Bpk. Peltu Mar (Purn) Isnanto</h5>
                     <h5 data-aos="fade-left"  data-aos-offset="-100" data-aos-duration="1500">Ibu Siti Nurhayati</h5>
                 </div>
-                <div class="col-auto col-lg-3" data-aos="fade-up" data-aos-duration="1200">
+                <div class="col-auto col-md-3 col-xs-3" data-aos="fade-up" data-aos-duration="1200">
                     <h1>&</h1>
                 </div>
-                <div class="col col-md-4 align-self-start d-flex flex-column align-items-center">
+                <div class="col col-md-4 col-xs-3 align-self-start d-flex flex-column align-items-center">
                     <div class="img-wrapper-spouse mb-6" data-aos="fade-left" data-aos-offset="-100" data-aos-duration="1000">
                         <div class="img-wrapper">
-                            <img src="{{ asset('public/assets/img/1/7.png') }}" alt="">
+                            <img src="{{ asset('assets/img/1/Revisi_Gbr_No_7crop.jpg') }}" class="" style="" alt="">
                         </div>
                     </div>
                     <h3 class="font-type-secondary font-bold mb-4" data-aos="fade-right"  data-aos-offset="-100" data-aos-duration="1200">Devi Fatmawati, S. E</h3>
@@ -157,14 +196,14 @@
             <h2 class="font-type-secondary text-center mb-10">Cerita Tentang Kita</h2>
 
             <div class="row gx-5 justify-content-center py-10 overflow-hidden">
-                <div class="col-lg-5 mb-6 mb-sm-10 mb-lg-0">
+                <div class="col-lg-5 col-sm-6 col-6 mb-6 mb-sm-10 mb-lg-0">
                     <div class="card card-story card-story-left mx-auto mb-6 mb-sm-10 mb-lg-16" data-aos="card-story-left" data-aos-duration="1200">
                         <div class="card-body">
-                            <img src="{{ asset('public/assets/img/1/6.jpg') }}" alt="">
+                            <img src="{{ asset('assets/img/1/6.jpg') }}" alt="">
                         </div>
                     </div>
 
-                    <div class="text-center text-lg-start b-10 mb-16 mb-lg-50" data-aos="fade-up" data-aos-duration="1200">
+                    <div class="text-center text-lg-start b-10 mb-16 mb-lg-50 pt-10 mt-10" data-aos="fade-up" data-aos-duration="1200">
                         <div data-aos="fade-up" data-aos-duration="1300">
                             <!-- <h5>2016</h5> -->
                             <h4 class="font-type-secondary mb-2">Memutuskan Untuk Bersama</h4>
@@ -175,8 +214,8 @@
                     </div>
                 </div>
 
-                <div class="col-lg-5">
-                    <div class="text-center text-lg-start b-10 mb-16 mb-lg-50" data-aos="fade-up" data-aos-duration="1200">
+                <div class="col-lg-5 col-sm-6 col-6">
+                    <div class="text-center text-lg-start b-10 mb-16 mb-lg-50 mb-sm-60" data-aos="fade-up" data-aos-duration="1200">
                         <div data-aos="fade-up" data-aos-duration="1300">
                             <!-- <h5>2016</h5> -->
                             <h4 class="font-type-secondary mb-2">Bagaimana Kami Bertemu</h4>
@@ -186,9 +225,9 @@
                         </p>
                     </div>
 
-                    <div class="card card-story card-story-right mx-auto  mb-6 mb-sm-10 mb-lg-16" data-aos="card-story-right" data-aos-duration="1200">
+                    <div class="card card-story card-story-right mx-auto mb-6 mb-sm-10 mb-lg-16" data-aos="card-story-right" data-aos-duration="1200">
                         <div class="card-body">
-                            <img src="{{ asset('public/assets/img/1/5.jpg') }}" alt="">
+                            <img src="{{ asset('assets/img/1/5.jpg') }}" alt="">
                         </div>
                     </div>
                 </div>
@@ -199,9 +238,9 @@
     <section id="section-3">
         <div class="container">
             <div id="row-lightgallery" class="row align-items-stretch g-4 g-lg-5 py-10 overflow-hidden">
-                <!-- <div data-src="{{ asset('public/assets/img/1/3.jpg') }}" class="col-md-6 col-lg-4 order-2 order-lg-1" data-aos="fade-up" data-aos-offset="-200" data-aos-duration="1200">
+                <!-- <div data-src="{{ asset('assets/img/1/3.jpg') }}" class="col-md-6 col-lg-4 order-2 order-lg-1" data-aos="fade-up" data-aos-offset="-200" data-aos-duration="1200">
                     <div class="img-wrapper img-wrapper-gallery-1">
-                        <img src="{{ asset('public/assets/img/1/3.jpg') }}" alt="">
+                        <img src="{{ asset('assets/img/1/3.jpg') }}" alt="">
                     </div>
                 </div> -->
                 <div class="col-lg-12 order-1">
@@ -211,25 +250,25 @@
                             <h4 class="font-type-secondary mb-6">Foto Prewedding Kami</h4>
                         </div>
                         <div class="col-4 align-self-end" data-aos="fade-up" data-aos-offset="-250" data-aos-duration="1400">
-                            <div data-src="{{ asset('public/assets/img/1/5.jpg') }}" class="img-wrapper img-wrapper-gallery-2">
-                                <img src="{{ asset('public/assets/img/1/5.jpg') }}" alt="">
+                            <div data-src="{{ asset('assets/img/1/Revisi_Gbr_No_4.jpeg') }}" class="img-wrapper img-wrapper-gallery-2">
+                                <img src="{{ asset('assets/img/1/Revisi_Gbr_No_4.jpeg') }}" alt="">
                             </div>
                         </div>
                         <div class="col-4 align-self-end" data-aos="fade-up" data-aos-offset="-250" data-aos-duration="1600">
-                            <div data-src="{{ asset('public/assets/img/1/6.jpg') }}" class="img-wrapper img-wrapper-gallery-2">
-                                <img src="{{ asset('public/assets/img/1/6.jpg') }}" alt="">
+                            <div data-src="{{ asset('assets/img/1/6.jpg') }}" class="img-wrapper img-wrapper-gallery-2">
+                                <img src="{{ asset('assets/img/1/6.jpg') }}" alt="">
                             </div>
                         </div>
                         <div class="col-4 align-self-end" data-aos="fade-up" data-aos-offset="-250" data-aos-duration="1600">
-                            <div data-src="{{ asset('public/assets/img/1/3.jpg') }}" class="img-wrapper img-wrapper-gallery-2">
-                                <img src="{{ asset('public/assets/img/1/3.jpg') }}" alt="">
+                            <div data-src="{{ asset('assets/img/1/Revisi_Gbr_No_3.jpg') }}" class="img-wrapper img-wrapper-gallery-2">
+                                <img src="{{ asset('assets/img/1/Revisi_Gbr_No_3.jpg') }}" alt="">
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-12 order-2" data-aos="fade-up" data-aos-offset="-250" data-aos-duration="1800">
-                    <div data-src="{{ asset('public/assets/img/1/4.jpg') }}" class="img-wrapper img-wrapper-gallery-3">
-                        <img src="{{ asset('public/assets/img/1/4.jpg') }}" alt="">
+                    <div data-src="{{ asset('assets/img/1/5.jpg') }}" class="img-wrapper img-wrapper-gallery-3">
+                        <img src="{{ asset('assets/img/1/5.jpg') }}" alt="">
                     </div>
                 </div>
             </div>
@@ -289,12 +328,19 @@
             <div class="row justify-content-center pt-10">
                 <div class="col-lg-8 text-center">
                     <div class="shadow p-3 mb-5 bg-body rounded">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.1868114496847!2d112.64509681477594!3d-7.444572894629289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x22215e8dd21e1575!2zN8KwMjYnNDAuNSJTIDExMsKwMzgnNTAuMiJF!5e0!3m2!1sen!2sid!4v1656519391926!5m2!1sen!2sid" width="820" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.1868114496847!2d112.64509681477594!3d-7.444572894629289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x22215e8dd21e1575!2zN8KwMjYnNDAuNSJTIDExMsKwMzgnNTAuMiJF!5e0!3m2!1sen!2sid!4v1656519391926!5m2!1sen!2sid" 
+                            class="col-md-12 col-sm-12 col-12"
+                            height="400px"
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
                     </div>
                     <h5 class="font-light mb-4">
                         Merupakan suatu Kehormatan dan Kebahagiaan Bagi Kami, Apabila Bapak/Ibu/Saudara/i Berkenan Hadir Untuk memberikan Doa Restu Kepada kedua mempelai.
                     </h5>
-                    <h4 class="font-type-secondary mt-2 mb-4">Assalamualaikum Warahmatullahi Wabarokatuh</h4>
+                    
                 </div>
             </div>
         </div>
@@ -336,7 +382,7 @@
                                 <div class="mb-5">
                                     <label for="" class="form-label">Nomor WhatsApp atau HP</label>
                                     <input
-                                        type="text"
+                                        type="number"
                                         class="form-control"
                                         name="nomor"
                                         placeholder="Nomor WhatsApp atau HP Anda">
@@ -386,7 +432,7 @@
                     <p class="text-lg font-light mb-3">
                         {{ $ucapan->ucapan }}
                     </p>
-                    <div class="text-dark-500 font-light">30 menit yang lalu</div>
+                    <div class="text-dark-500 font-light">{{$ucapan->created_at }}</div>
                 </li>
                 @endforeach
             </ul>
@@ -405,7 +451,7 @@
                 <h2 class="font-type-secondary font-bold mb-5">Wassalamu'alaikum Warahmatullahi Wabarakatuh</h2>
                 <h4 class="font-type-secondary font-bold mb-3">Kami Yang Berbahagia</h4>
                 <h2 class="font-type-secondary font-bold mb-5">DEVI & JANIST</h2>
-                <img src="{{ asset('public/assets/img/closing.png') }}" alt="" class="w-25rem">
+                <img src="{{ asset('assets/img/closing.png') }}" alt="" class="w-25rem">
             </div>
         </div>
     </section>
@@ -419,15 +465,18 @@
         </div>
     </footer> --}}
 
-    <button id="btn-play" class="btn btn-light">
+    <button id="btn-play" class="btn btn-light ">
         <i class="ri ri-volume-high"></i>
     </button>
-    <a href="#header" id="btn-to-top" class="btn btn-light page-scroll  ">
+    <!-- <button class="btn btn-light" style="">
+        <i class="ri ri-volume-high"></i>
+    </button> -->
+    <!-- <a href="#header" id="btn-to-top" class="btn btn-light page-scroll  ">
         <i class="ri ri-arrow-up"></i>
-    </a>
+    </a> -->
 
     <audio controls id="audio" class="d-none">
-        <source src="{{ asset('public/assets/music/a_whole_new_world.mp3') }}" type="audio/mpeg">
+        <source src="{{ asset('assets/music/a_whole_new_world.mp3') }}" type="audio/mpeg">
         <!-- Your browser does not support the audio element. -->
     </audio>
 
@@ -445,6 +494,6 @@
     <!-- Anime js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- App -->
-    <script src="{{ asset('public/assets/js/app.js') }}"></script>
+    <script src="{{ asset('assets/js/app.js') }}"></script>
 </body>
 </html>

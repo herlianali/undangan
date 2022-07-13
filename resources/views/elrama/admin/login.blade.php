@@ -7,16 +7,16 @@
 
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
 
-	<link rel="stylesheet" href="{{asset('public/assets/AdminLTE/plugins/fontawesome-free/css/all.min.css')}}">
+	<link rel="stylesheet" href="{{asset('assets/AdminLTE/plugins/fontawesome-free/css/all.min.css')}}">
 
-	<link rel="stylesheet" href="{{asset('public/assets/AdminLTE/plugins/icheck-bootstrap/icheck-bootstrap.min.css')}}">
+	<link rel="stylesheet" href="{{asset('assets/AdminLTE/plugins/icheck-bootstrap/icheck-bootstrap.min.css')}}">
 
-	<link rel="stylesheet" href="{{asset('public/assets/AdminLTE/dist/css/adminlte.min.css?v=3.2.0')}}">
+	<link rel="stylesheet" href="{{asset('assets/AdminLTE/dist/css/adminlte.min.css?v=3.2.0')}}">
 </head>
 	<body class="hold-transition login-page">
 		<div class="login-box">
             <div class="login-logo">
-                <img src="{{ asset('public/assets/img/dea-logo-pendek.png') }}" width="40%" class="" alt=""><br>
+                <img src="{{ asset('assets/img/dea-logo-pendek.png') }}" width="40%" class="" alt=""><br>
                 <a href="../../index2.html"><b>DEA </b>Undangan Online</a>
 			</div>
 
@@ -53,10 +53,10 @@
 		</div>
 
 
-		<script src="{{asset('public/assets/AdminLTE/plugins/jquery/jquery.min.js')}}"></script>
+		<script src="{{asset('assets/AdminLTE/plugins/jquery/jquery.min.js')}}"></script>
 
-		<script src="{{asset('public/assets/AdminLTE/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+		<script src="{{asset('assets/AdminLTE/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 
-		<script src="{{asset('public/assets/AdminLTE/dist/js/adminlte.min.js?v=3.2.0')}}"></script>
+		<script src="{{asset('assets/AdminLTE/dist/js/adminlte.min.js?v=3.2.0')}}"></script>
 	</body>
 	</html>

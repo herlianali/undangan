@@ -104,6 +104,7 @@
             <div class="modal-footer justify-content-between">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                 <form action="{{ route('hapusUcapan', $ucapan1->id) }}" method="POST">
+                    
                     @csrf
                     @method('DELETE')
                     <button type="submit" class="btn btn-danger">Hapus</button>

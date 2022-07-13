@@ -6,9 +6,9 @@
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&amp;display=fallback">
 
-    <link rel="stylesheet" href="{{asset('public/assets/AdminLTE/plugins/fontawesome-free/css/all.min.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/AdminLTE/plugins/fontawesome-free/css/all.min.css')}}">
 
-    <link rel="stylesheet" href="{{asset('public/assets/AdminLTE/dist/css/adminlte.min.css?v=3.2.0')}}">
+    <link rel="stylesheet" href="{{asset('assets/AdminLTE/dist/css/adminlte.min.css?v=3.2.0')}}">
 </head>
 <body class="sidebar-mini control-sidebar-slide-open layout-fixed layout-navbar-fixed layout-footer-fixed" style="height: auto;">
 
@@ -23,18 +23,18 @@
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
 
             <a href="../../index3.html" class="brand-link text-sm">
-                <img src="../../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-                <span class="brand-text font-weight-light">AdminLTE 3</span>
+                <img src="{{ asset('assets/img/dea-logo-pendek.png') }}" alt="DEA Sinergi" class="brand-image img-circle elevation-3" style="opacity: .8">
+                <span class="brand-text font-weight-light">DEA Sinergi</span>
             </a>
 
             <div class="sidebar" style="overflow-y: auto;">
 
                 <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                     <div class="image">
-                        <img src="../../dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+                        <!-- <img src="../../dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image"> -->
                     </div>
                     <div class="info">
-                        <a href="#" class="d-block">Alexander Pierce</a>
+                        <a href="#" class="d-block">Alexander De Admins</a>
                     </div>
                 </div>
 
@@ -74,7 +74,7 @@
                         </li> -->
                         <li class="nav-item">
                             <a href="{{ route('beranda') }}" class="nav-link">
-                                <i class="nav-icon fas fa-th"></i>
+                                <i class="nav-icon fas fa-home"></i>
                                 <p>
                                     Beranda
                                 </p>
@@ -82,9 +82,17 @@
                         </li>
                         <li class="nav-item">
                             <a href="{{ route('ucapanAdmin') }}" class="nav-link">
-                                <i class="nav-icon fas fa-th"></i>
+                                <i class="nav-icon fas fa-envelope-open-text"></i>
                                 <p>
                                     Ucapan
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ route('tamu.index') }}" class="nav-link">
+                                <i class="nav-icon fas fa-users"></i>
+                                <p>
+                                    Tamu
                                 </p>
                             </a>
                         </li>
@@ -111,11 +119,11 @@
     </div>
 
 
-    <script src="{{asset('public/assets/AdminLTE/plugins/jquery/jquery.min.js')}}"></script>
+    <script src="{{asset('assets/AdminLTE/plugins/jquery/jquery.min.js')}}"></script>
 
-    <script src="{{asset('public/assets/AdminLTE/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+    <script src="{{asset('assets/AdminLTE/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 
-    <script src="{{asset('public/assets/AdminLTE/dist/js/adminlte.min.js?v=3.2.0')}}"></script>
+    <script src="{{asset('assets/AdminLTE/dist/js/adminlte.min.js?v=3.2.0')}}"></script>
 
 
 </body>

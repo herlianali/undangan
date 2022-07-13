@@ -14,5 +14,6 @@ class UndanganController extends Controller
         return view('index', compact('ucapans'), compact('test'));
     }
 
+    
 
 }
